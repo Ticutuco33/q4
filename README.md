@@ -15,32 +15,3 @@ I will have ten possible characters that you can go in a date with:
 8- Gru
 9- Senator Armstronger
 10- Doom Guy
-
-print("❤️Welcome to Enzo's dating simulator❤️")
-
-def choose_a_date():
-    
-    
-    
-    
-def kratos():
-    
-def goku():
-    
-def sonic():
-    
-def dante():
-    
-def master_chief():
-    
-def gojo():
-    
-def po():
-    
-def gru():
-    
-def senator_armstrong():
-    
-def doom_guy():
-    
-    
