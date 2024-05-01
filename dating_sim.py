@@ -28,6 +28,10 @@ def choose_a_date():
     
 def kratos():
     print("I am the God of War!!! What do you want with me human?")
+    kratos1 = input("1. I want to go kill gods with you.\n 2. I came here to kill you!!")
+    if kratos1 == "1"
+        
+    elfi:
     
 def goku():
     print("Hey, I am Goku, are you strong?")
