@@ -66,7 +66,27 @@ def kratos2():
         print("Invalid choise, stupid!")
 def kratos3():
     print("Good choice, he can run fast but that is everything he does. You and Kratos fought together and killed Hermes pretty easily.\nKratos then asks you, who is next?")
-    
+    kratos_choise4 = input("1. We should fight Poseidon. \n2. We should fight Hades.")
+    if kratos_choise4 == "1":
+        kratos4()
+    elif kratos_choise4 == "2":
+        kratos4_1()
+    else:
+        print("Invalid choise, stupid!")
+def kratos4():
+    print("Great choise Poseidon is strong but together he will be a piece of cake. You and Kratos defeat Poseidon pretty easily. You guys keep defeating more and more gods, until the only god left is Zeus, the god of the gods. Zeus knows that you guys together are too strong so he calls his father Cronos to help him. Kratos wants to full fill his revenge by killing his father.")
+    kratos_choise5 = input("Do you fight Zeus or Cronos?\n1. Zeus\n2. Cronos")
+    if kratos_choise5 == "1":
+        deathk3()
+    elif kratos_choise5 == "2":
+        kratos_win()
+    else:
+        print("Invalid input, stupid!")
+def deathk3():
+    print("Kratos wants his revenge, so he stabs you in the back and you die.")        
+
+def kratos4_1():
+    print("Hades will be hard but we can do it. You and Kratos fight Hades it was a hard battle, you guys won but you came of injured. You two keep defeating all the other gods with averege difficulty, until the only god left is Zeus, the god of the gods. Zeus knows that you guys together are too strong so he calls his father Cronos to help him. Kratos wants to full fill his revenge by killing his father.")
 def goku():
     print("Hey, I am Goku, are you strong?")
     
