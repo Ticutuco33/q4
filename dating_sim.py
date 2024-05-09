@@ -23,8 +23,8 @@ def choose_a_date():
     elif date == "Doom Guy" or date == "doom guy":
         doom_guy()
     else:
-        print("Please choose a available date")
-    
+        print("Please choose a available date.\n")
+        choose_a_date()
     
 def kratos():
     print("I am the God of War!!! What do you want with me human?")
@@ -34,7 +34,8 @@ def kratos():
     elif kratos_choise1 == "2":
         deathk()
     else:
-        print("Invalid Choise, stupid!")
+        print("Invalid Choise, stupid!\n")
+        kratos()
 def kratos1():
     print("I see human, but do you have the strength to fight alongside the God of War?")
     kratos_choise2 = input("1. Tell him that you are stronger then him.\n2. Tell him that you are not that strong but you have the power of revenge.\nMake your Choise: ")
@@ -43,7 +44,8 @@ def kratos1():
     elif kratos_choise2 == "2":
         kratos2()
     else:
-        print("Invalid choise, stupid!")
+        print("Invalid choise, stupid!\n")
+        kratos1()
 def deathk():
     print("You dare to challenge the God of War? Prepare for battle!\nHe completely oblitarated you, womp womp.")
     try_againk = input("Do you want to try again? ")
@@ -52,7 +54,8 @@ def deathk():
     elif try_againk == "no":
         choose_a_date()
     else:
-        print("Invalid input, stupid!")
+        print("Invalid input, stupid!\n")
+        deathk()
 def deathk2():
     print("He punches you to test your strength, since your weak he kills you.")
     try_againk = input("Do you want to try again? ")
@@ -61,7 +64,8 @@ def deathk2():
     elif try_againk == "no":
         choose_a_date()
     else:
-        print("Invalid input, stupid!")
+        print("Invalid input, stupid!\n")
+        deathk2()
 def kratos2():
     print("I like your spirit human, I will train you and together we will have our REVENGE!!!\nKratos trains you for a year and now you have become much stronger. Kratos asks which god do you want to take down first?")
     kratos_choise3 = input("1. Hermes\n2. Aphrodite\nMake your choise: ")
@@ -70,7 +74,8 @@ def kratos2():
     elif kratos_choise3 == "2":
         death_aphrodite()
     else:
-        print("Invalid choise, stupid!")
+        print("Invalid choise, stupid!\n")
+        kratos2()
 def death_aphrodite():
     print("Kratos agreed but was not so sure. When you went to fight her you succumbed to her and your desires.\nYour now her slave.")
     try_againk = input("Do you want to try again? ")
@@ -79,7 +84,8 @@ def death_aphrodite():
     elif try_againk == "no":
         choose_a_date()
     else:
-        print("Invalid input, stupid!")
+        print("Invalid input, stupid!\n")
+        death_aphrodite()
 def kratos3():
     print("Good choice, he can run fast but that is everything he does. You and Kratos fought together and killed Hermes pretty easily.\nKratos then asks you, who is next?")
     kratos_choise4 = input("1. We should fight Poseidon. \n2. We should fight Hades.\nMake your choise: ")
@@ -88,7 +94,8 @@ def kratos3():
     elif kratos_choise4 == "2":
         kratos4_1()
     else:
-        print("Invalid choise, stupid!")
+        print("Invalid choise, stupid!\n")
+        kratos3()
 def kratos4():
     print("Great choise Poseidon is strong but together he will be a piece of cake. You and Kratos defeat Poseidon pretty easily. You guys keep defeating more and more gods, until the only god left is Zeus, the god of the gods. Zeus knows that you guys together are too strong so he calls his father Cronos to help him. Kratos wants to fullfill his revenge by killing his father.")
     kratos_choise5 = input("Do you fight Zeus or Cronos?\n1. Zeus\n2. Cronos\nMake your choise: ")
@@ -97,7 +104,8 @@ def kratos4():
     elif kratos_choise5 == "2":
         kratos_win()
     else:
-        print("Invalid input, stupid!")
+        print("Invalid input, stupid!\n")
+        kratos4()
 def deathk3():
     print("Kratos wants his revenge, he wants to kill his father with his own hands, so he stabs you in the back and you die.")
     try_againk = input("Do you want to try again? ")
@@ -106,7 +114,8 @@ def deathk3():
     elif try_againk == "no":
         choose_a_date()
     else:
-        print("Invalid input, stupid!")
+        print("Invalid input, stupid!\n")
+        deathk3()
 def kratos_win():
     print("You go and take on Cronos, he is strong but you will being filled by anger and revenge you manege to kill Cronos with averege difficulty. Kratos defeats Zeus, both of you and Kratos got their revenge.\nThe End!!!")
     the_endk = input("Do you want to go back to the menu? ")
@@ -122,7 +131,8 @@ def kratos4_1():
     elif kratos_choise51 == "2":
         kratos_win_death()
     else:
-        print("invalid input, stupid!")
+        print("invalid input, stupid!\n")
+        kratos4_1()
 def kratos_win_death():
     print("You go and take on Cronos, but you are still injured from the fight with Hades. The battle is hard and both you and Cronos are in the verge of the death, but with you wanting to fullfill your revenge, you use your last bit of strengh to kill Cronos. Kratos comes to you and say: You fought well my brother, now you may rest. After you he finishes talking you close your eyes and die.\nThe End!!!")
     the_endk2 = input("Do you want to go back to the menu or try again? ")
@@ -131,10 +141,52 @@ def kratos_win_death():
     elif the_endk2 == "try again":
         kratos()
     else:
-        print("Invalid input, stupid!")
+        print("Invalid input, stupid!\n")
+        kratos_win_death()
 def goku():
     print("Hey, I am Goku, are you strong?")
-    
+    goku_choise1 = input("1. No but I came to meet you so I can became stronger.\n2. Yes I am.\nMake your choise: ")
+    if goku_choise1 == "1":
+        goku1()
+    elif goku_choise1 == "2":
+        deathg()
+    else:
+        print("Invalid input, stupid!\n")
+        goku()
+        print("Invalid input, stupid!\n")
+        goku
+def goku1():
+    print("I like your spirit, warrior. I will train you so I can have someone strong to fight. Goku trains you, you became much stronger and gain new abilities like the ability to fly, ki control, kamehameha, spirit bomb, instant transmission and many other abilities. One day on the last the day of training, Freeza appers and starts attacking Goku, Do you help him?")
+    goku_choise2 = input("1. Yes\n2. No and run away.\nMake your choise: ")
+    if goku_choise2 == "1":
+        goku2()
+    elif goku_choise2 == "2":
+        deathg2()
+    else:
+        print("Invalid input, stupid!\n")
+        goku1()
+def goku2():
+    print("")
+def deathg():
+    print("You and Goku fight but since Goku is much stronger than you, you DIE.")
+    try_againg = input("Do you want to try again? ")
+    if try_againg == "yes":
+        goku()
+    elif try_againg == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deathg()
+def deathg2():
+    print("Freeza killed Goku while you were running away, but Freeza manege to catch up to you and he killed you. You are DEAD.")
+    try_againg = input("Do you want to try again? ")
+    if try_againg == "yes":
+        goku1()
+    elif try_againg == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deathg2()
 def sonic():
     print("Sup, I am Sonic, nice to meet, you do you want to race?")
     
@@ -142,7 +194,7 @@ def dante():
     print("Hey Devil May Cry, I am Dante, would you like to kill some demons?")
     
 def master_chief():
-    print("")
+    print("My name is Master Chief soldier, who is our enemy?")
     
 def gojo():
     print("Your weak. I am Gojo the strongest sorcerer alive, would you like my help in killing curses?")
