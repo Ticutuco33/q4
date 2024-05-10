@@ -2,9 +2,8 @@
 Dating Simulator
 
 Create the story of the dating simulator.
-
-For this week april 22 ro april 28 I will create the story and choose the characters.
-I will have ten possible characters that you can go in a date with:
+today on day 10 of may 2024 i created my presentation slides. 
+I will have ten possible characters that you can go in a date with and 1 secret unlockable character:
 1- Kratos
 2- Goku
 3- Sonic
@@ -15,3 +14,4 @@ I will have ten possible characters that you can go in a date with:
 8- Gru
 9- Senator Armstronger
 10- Doom Guy
+11- secret character
