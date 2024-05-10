@@ -166,7 +166,8 @@ def goku1():
         print("Invalid input, stupid!\n")
         goku1()
 def goku2():
-    print("")
+    print("You chose to stay and help Goku in the fight agaist Freeza. You wanna join the fight with a attack. Which attack do you use?")
+    
 def deathg():
     print("You and Goku fight but since Goku is much stronger than you, you DIE.")
     try_againg = input("Do you want to try again? ")
