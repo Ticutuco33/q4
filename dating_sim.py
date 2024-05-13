@@ -153,8 +153,6 @@ def goku():
     else:
         print("Invalid input, stupid!\n")
         goku()
-        print("Invalid input, stupid!\n")
-        goku
 def goku1():
     print("I like your spirit, warrior. I will train you so I can have someone strong to fight. Goku trains you, you became much stronger and gain new abilities like the ability to fly, ki control, kamehameha, spirit bomb, instant transmission and many other abilities. One day on the last the day of training, Freeza appers and starts attacking Goku, Do you help him?")
     goku_choise2 = input("1. Yes\n2. No and run away.\nMake your choise: ")
@@ -167,7 +165,30 @@ def goku1():
         goku1()
 def goku2():
     print("You chose to stay and help Goku in the fight agaist Freeza. You wanna join the fight with a attack. Which attack do you use?")
-    
+    move = input("1. kamehameha.\n2. fly in and try to punch him.\n3. Make a spirit bomb.")
+    if move == "1":
+        goku3_1()
+    elif move == "2":
+        deathg3()
+    elif move == "3":
+        goku3_2()
+    else:
+        print("Invalid input, stupid!\n")
+        goku2()
+def goku3_1():
+    print("You shoot a kamehameha at Freeza and it hit him, he took a lot of damage. What do you do now?")
+    move2 = input("1. fly in to hit him.\n2. shoot another kamehameha.")
+    if move2 == "1":
+        goku4_1()
+    elif move2 == "2":
+        deathg4()
+    else:
+        print("Invalid input, stupid!\n")
+        goku3_1()
+def goku4_1():
+    print("")
+def goku3_2():
+    print("You start charging the spirit bomb, Goku notices you charging the spirit bomb so he keeps Freeza ocupied. Your spirit bomb is fully charged, you throw it at Freeza ")
 def deathg():
     print("You and Goku fight but since Goku is much stronger than you, you DIE.")
     try_againg = input("Do you want to try again? ")
@@ -182,12 +203,32 @@ def deathg2():
     print("Freeza killed Goku while you were running away, but Freeza manege to catch up to you and he killed you. You are DEAD.")
     try_againg = input("Do you want to try again? ")
     if try_againg == "yes":
-        goku1()
+        goku()
     elif try_againg == "no":
         choose_a_date()
     else:
         print("Invalid input, stupid!\n")
         deathg2()
+def deathg3():
+    print("Freeza noticed you flying in, so he shoot a lazer beam at you. The lazer beam hit your heart and you DIED.")
+    try_againg = input("Do you want to try again? ")
+    if try_againg == "yes":
+        goku()
+    elif try_againg == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deathg3()
+def deathg4():
+    print("Freeza sees you charging another kamehameha, so he teleports behind you and stabs you in the heart with his tail. You DIED.")
+    try_againg = input("Do you want to try again? ")
+    if try_againg == "yes":
+        goku()
+    elif try_againg == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deathg4()
 def sonic():
     print("Sup, I am Sonic, nice to meet, you do you want to race?")
     
