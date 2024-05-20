@@ -518,7 +518,42 @@ def sonic():
                                                                 *****++++++++++****                 
           ''')
     print("Sup, I am Sonic, nice to meet, you do you want to race?")
-    
+    sonic_choice = input("1. Yes.\n2. No.\nMake your choice: ")
+    if sonic_choice == "1":
+        sonic2()
+    elif sonic_choice == "2":
+        deaths()
+    else:
+        print("Invalid input, stupid!\n")
+        sonic()
+def sonic2():
+    print("You agreed to race agaist Sonic, both of you and Sonic get in teleported to a magical track in another planet, you and Sonic get in the start line and in a running position. 3, 2, 1, GO!!! Both you and Sonic start running, both are equal in speed. The race goes on and you get to a intersection and you can't see where the roads take you. Which path do you take?")
+    sonic_choice2 = input("1. Left.\n2. Middle.\n3. Right\nMake your choice: ")
+    if sonice_choice2 == "1":
+        deaths2()
+    elif sonic_choice2 == "2":
+        sonic3_1()
+    elif sonic_choice2 == "3":
+        sonic3_2()
+    else:
+        print("Invalid input, stupid!\n")
+        sonic2()
+def sonic3_1():
+    print("")
+def sonic3_2():
+    print("")
+def deaths():
+    print("Sonic didn't like you not racing with him, so he run away and you lost your date. GAME OVER!!")
+    try_agains = input("Do you want to try again? ")
+    if try_agains == "yes":
+        sonic()
+    elif try_agains == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deaths()
+def deaths2():
+    print("You choose the wrong path")
 def dante():
     print('''
                                                                                                               
