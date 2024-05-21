@@ -527,9 +527,9 @@ def sonic():
         print("Invalid input, stupid!\n")
         sonic()
 def sonic2():
-    print("You agreed to race agaist Sonic, both of you and Sonic get in teleported to a magical track in another planet, you and Sonic get in the start line and in a running position. 3, 2, 1, GO!!! Both you and Sonic start running, both are equal in speed. The race goes on and you get to a intersection and you can't see where the roads take you. Which path do you take?")
+    print("You agreed to race agaist Sonic, both of you and Sonic get in teleported to a magical track in another planet, you and Sonic get in the start line and in a running position. 3, 2, 1, GO!!! Both you and Sonic start running, you are in winning so far. The race goes on and you get to a intersection and you can't see where the roads take you. Which path do you take?")
     sonic_choice2 = input("1. Left.\n2. Middle.\n3. Right\nMake your choice: ")
-    if sonice_choice2 == "1":
+    if sonic_choice2 == "1":
         deaths2()
     elif sonic_choice2 == "2":
         sonic3_1()
@@ -539,9 +539,22 @@ def sonic2():
         print("Invalid input, stupid!\n")
         sonic2()
 def sonic3_1():
-    print("")
+    print("The middle path lead you to a new planet full of sand and cactus.")
 def sonic3_2():
-    print("")
+    print("The right path took you to a planet full of mushrooms. You keep running not knowing with Sonic followed you or not. You look at the mushrooms and thinks that maybe you could use them to your adventage. What do you do with the mushrooms?")
+    sonic_choice3_2 = input("1. Eat a mushroom.\n2. Jump on top of the mushrooms.\nMake your choice: ")
+    if sonic_choice3_2 == "1":
+        deaths3_2()
+    elif sonic_choice3_2 == "2":
+        sonic4_2()
+    else:
+        print("Invalid input, stupid!")
+def sonic4_2():
+    print("You kumped on top of the mushrooms which gave you a speed boost and you started zooming acroos the track. After a while you reach a portal. Do you enter the portal?")
+    sonic_choice4_2 = input("1. Enter the portal.\n2. Don't enter the portal.\nMake your choice: ")
+    if sonic_choice4_2 == "1":
+        sonic4()
+    
 def deaths():
     print("Sonic didn't like you not racing with him, so he run away and you lost your date. GAME OVER!!")
     try_agains = input("Do you want to try again? ")
@@ -553,7 +566,25 @@ def deaths():
         print("Invalid input, stupid!\n")
         deaths()
 def deaths2():
-    print("You choose the wrong path")
+    print("You choose the wrong path, it lead you into a black whole, who sucked you in and you DIED!!")
+    try_agains = input("Do you want to try again? ")
+    if try_agains == "yes":
+        sonic()
+    elif try_agains == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deaths2()
+def deaths3_2():
+    print("The mushroom is poisonous and you DIE.")
+    try_agains = input("Do you want to try again? ")
+    if try_agains == "yes":
+        sonic()
+    elif try_agains == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deaths3_2()
 def dante():
     print('''
                                                                                                               
