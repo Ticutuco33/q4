@@ -539,7 +539,42 @@ def sonic2():
         print("Invalid input, stupid!\n")
         sonic2()
 def sonic3_1():
-    print("The middle path lead you to a new planet full of sand and cactus.")
+    print("The middle path lead you to a new planet full of sand and cactus. You keep running, unsure if Sonic followed you. The sand slows you down a bit, but you see a small oasis ahead. Do you stop at the oasis?")
+    sonic_choice3_1 = input("1. Stop at the oasis.\n2. Keep running.\nMake your choice: ")
+    if sonic_choice3_1 == "1":
+       sonic4_12()
+    elif sonic_choice3_1 == "2":
+       sonic4_11()
+    else:
+       print("Invalid input, stupid!\n")
+       sonic3_1()
+def sonic4_12():
+    print("You stop at the oasis and find a refreshing drink that boosts your energy. Feeling rejuvenated, you start running again with a burst of speed. You see another portal ahead. Do you enter the portal?")
+    sonic_choice4_2 = input("1. Enter the portal.\n2. Don't enter the portal.\nMake your choice: ")
+    if sonic_choice4_2 == "1":
+        sonic5_2()
+    elif sonic_choice4_2 == "2":
+        loser_sonic()
+    else:
+        print("Invalid input, stupid!\n")
+        sonic4_12()
+def sonic4_11():
+    print("You decide to keep running through the sand. It's tough, but you manage to keep your lead. You see another portal ahead. Do you enter the portal?")
+    sonic_choice5_1 = input("1. Enter the portal.\n2. Don't enter the portal.\nMake your choice: ")
+    if sonic_choice5_1 == "1":
+        sonic5_11()
+    elif sonic_choice5_1 == "2":
+        loser_sonic()
+    else:
+        print("Invalid input, stupid!\n")
+        sonic4_11()
+def sonic5_11():
+    print("You enter the portal and the portal leads you to a place where everything is black expect the track and at the end of the track there is the finish line. You look to your right and see that Sonic is right next to you. Both of you start speeding to the finish line, since you ran in the sand your feet hurts and your speed is not at max, so you are inches behind Sonic. You and Sonic are getting close to the finish, Sonic is in front of you by four inches, so for you to win you take a leap foward and you reach foward with your arm. You both cross the finish line but you guys don't know who crossed the line first so you guys check a perfecly placed TV that was connected to a camera on the finish line. Your anxious, the video is slowed down. The TV shows that you crossed the finish line before Sonic. YOU WIN!!!\nYou are so happy that you won agaist Sonic. That's your date.")
+    the_end = input("Do you want to go back to the menu? ")
+    if the_end == "yes":
+        choose_a_date()
+    elif the_end == "no":
+        print("Bye Bye 🤫🧏‍!!!")
 def sonic3_2():
     print("The right path took you to a planet full of mushrooms. You keep running not knowing with Sonic followed you or not. You look at the mushrooms and thinks that maybe you could use them to your adventage. What do you do with the mushrooms?")
     sonic_choice3_2 = input("1. Eat a mushroom.\n2. Jump on top of the mushrooms.\nMake your choice: ")
@@ -550,7 +585,7 @@ def sonic3_2():
     else:
         print("Invalid input, stupid!")
 def sonic4_2():
-    print("You kumped on top of the mushrooms which gave you a speed boost and you started zooming acroos the track. After a while you reach a portal. Do you enter the portal?")
+    print("You jumped on top of the mushrooms which gave you a speed boost and you started zooming acroos the track. After a while you reach a portal. Do you enter the portal?")
     sonic_choice4_2 = input("1. Enter the portal.\n2. Don't enter the portal.\nMake your choice: ")
     if sonic_choice4_2 == "1":
         sonic5_2()
@@ -560,7 +595,7 @@ def sonic4_2():
         print("Invalid input, stupid!\n")
         sonic4_2()
 def sonic5_2():
-    print("You enter the portal and the portal leads you to a place where everything is black expect the track and at the end of the track there is the finish line. You look to your right and see that Sonic is right next to you. Both of you start speeding to the finish line, you both are right next to each other. You and Sonic are getting close to the finish, Sonic is in front of you by one inch, so for you to win you take a leap foward and you reach foward with your arm. You both cross the finish line but you guys don't know who crossed the line first so you guys check a perfecly placed TV that was connected to a camera on the finish line. Your anxious, the video is slowed down. The TV shows that you crossed the finish line before Sonic. YOU WIN!!!\n You are so happy that you won agaist Sonic")
+    print("You enter the portal and the portal leads you to a place where everything is black expect the track and at the end of the track there is the finish line. You start runnig to the finish line. You are halfway to the finish line, when Sonic passes through the same portal you came from. Since you were already halfway you reach the finish line first and YOU WIN!!!\nYou are so happy that you won agaist Sonic. That's your date.")
     the_end = input("Do you want to go back to the menu? ")
     if the_end == "yes":
         choose_a_date()
