@@ -734,7 +734,115 @@ def dante():
                   @%%%@@@                                                                           
           ''')
     print("Hey Devil May Cry, I am Dante, would you like to kill some demons?")
-    
+    dante_choice = input("1. Yes.\n2. No.\nMake your choice: ")
+    if dante_choice == "1":
+        dante2()
+    elif dante_choice == "2":
+        deaths_dante()
+    else:
+        print("Invalid input, stupid!\n")
+        dante()
+
+def dante2():
+    print("You agreed to join Dante on a demon-hunting mission. You are teleported to a dark, gothic city filled with eerie sounds and shadows lurking around every corner. Dante hands you a sword. Do you take the sword?")
+    dante_choice2 = input("1. Take the sword.\n2. Refuse the sword.\nMake your choice: ")
+    if dante_choice2 == "1":
+        dante3()
+    elif dante_choice2 == "2":
+        deaths_dante2()
+    else:
+        print("Invalid input, stupid!\n")
+        dante2()
+def dante3():
+    print("You take the sword from Dante and feel a surge of power. You follow Dante through the dark alleys and into an abandoned cathedral where a horde of demons awaits. Do you charge into battle?")
+    dante_choice3 = input("1. Charge into battle.\n2. Wait for Dante's signal.\nMake your choice: ")
+    if dante_choice3 == "1":
+        deaths_dante1()
+    elif dante_choice3 == "2":
+        dante4_2()
+    else:
+        print("Invalid input, stupid!\n")
+        dante3()
+def deaths_dante1():
+    print("You charge into battle recklessly. The demons overwhelm you, and you are quickly defeated. GAME OVER!!!")
+    try_again_dante = input("Do you want to try again? ")
+    if try_again_dante == "yes":
+        dante()
+    elif try_again_dante == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deaths_dante2()
+def dante4_2():
+    print("You wait for Dante's signal. He nods at you, and both of you charge into battle together. The demons are fierce, but you and Dante fight valiantly. After an intense battle, you stand victorious. Do you explore the cathedral further or leave?")
+    dante_choice4 = input("1. Explore the cathedral.\n2. Leave.\nMake your choice: ")
+    if dante_choice4 == "1":
+        dante5_1()
+    elif dante_choice4 == "2":
+        dante5_2()
+    else:
+        print("Invalid input, stupid!\n")
+        dante4_2()
+def dante5_1():
+    print("You decide to explore the cathedral further. As you venture deeper, you discover a hidden chamber filled with ancient artifacts and a mysterious portal. Do you enter the portal?")
+    dante_choice5_1 = input("1. Enter the portal.\n2. Don't enter the portal.\nMake your choice: ")
+    if dante_choice5_1 == "1":
+        dante6_1()
+    elif dante_choice5_1 == "2":
+        dante6_2()
+    else:
+        print("Invalid input, stupid!\n")
+        dante5_1()
+def dante6_1():
+    print("You enter the portal and find yourself in a strange, otherworldly realm. You encounter a powerful demon lord. You don't know a way to get out, so the only way to survive is to fight the demon lord. After an epic battle, you defeat the demon lord and gained a cool sword that is also a guitar. After you grabbed the guitar you are teleported to the front of the cathedral, where Dante is waiting for you. Dante sees you have a the sword which is also a guitar, he asks you to play for him. You start playing and it was awesome.\nYOU WIN!!! That's your date.")
+    the_end_dante = input("Do you want to go back to the menu? ")
+    if the_end_dante == "yes":
+        choose_a_date()
+    elif the_end_dante == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input, stupid!\n")
+        dante6_1()
+def dante6_2():
+    print("You decide not to enter the portal. You leave the cathedral with Dante, having successfully completed your mission.\nYOU WIN!!! That's your date.")
+    the_end_dante = input("Do you want to go back to the menu? ")
+    if the_end_dante == "yes":
+        choose_a_date()
+    elif the_end_dante == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input, stupid!\n")
+        dante6_2()
+def dante5_2():
+    print("You decide to leave the cathedral. As you walk away, you feel that you missed something important. YOU LOSE!!!")
+    try_again_dante = input("Do you want to try again? ")
+    if try_again_dante == "yes":
+        dante()
+    elif try_again_dante == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        dante5_2()
+def deaths_dante():
+    print("Dante didn't appreciate your refusal to join him. He leaves you behind, and you miss out the best adventure of your LIFE. GAME OVER!!!")
+    try_again_dante = input("Do you want to try again? ")
+    if try_again_dante == "yes":
+        dante()
+    elif try_again_dante == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deaths_dante()
+def deaths_dante2():
+    print("Without the sword, you are defenseless against the demons. They quickly overpower you. GAME OVER!!!")
+    try_again_dante = input("Do you want to try again? ")
+    if try_again_dante == "yes":
+        dante()
+    elif try_again_dante == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, stupid!\n")
+        deaths_dante2()
 def master_chief():
     print('''
                                                                                                               
