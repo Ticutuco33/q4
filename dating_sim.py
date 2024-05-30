@@ -24,8 +24,7 @@ def choose_a_date():
         doom_guy()
     else:
         print("Please choose a available date.\n")
-        choose_a_date()
-    
+        choose_a_date()  
 def kratos():
     print('''
                                                          :::                                        
@@ -1198,7 +1197,94 @@ def gojo():
                                            %%@@@@@                                        
           ''')
     print("Your weak. I am Gojo the strongest sorcerer alive, would you like my help in killing curses?")
-    
+    gojo_choice = input("1. Yes, I need your help.\n2. No, I can handle it alone.\nMake your choice: ")
+    if gojo_choice == "1":
+        gojo_help()
+    elif gojo_choice == "2":
+        gojo_alone()
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo()
+def gojo_help():
+    print("Gojo decides to help you. He uses his incredible strength to defeat the curses effortlessly. After the battle, Gojo invites you to a special training session. Do you accept?")
+    gojo_choice2 = input("1. Yes, I want to train with you.\n2. No, I am tired.\nMake your choice: ")
+    if gojo_choice2 == "1":
+        gojo_training()
+    elif gojo_choice2 == "2":
+        gojo_rest()
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_help()
+def gojo_training():
+    print("You accept the training session. Gojo takes you to a secluded area where he teaches you advanced techniques. You feel your power growing. Do you challenge Gojo to a sparring match or continue learning from him?")
+    gojo_choice3 = input("1. Challenge Gojo to a sparring match.\n2. Continue learning.\nMake your choice: ")
+    if gojo_choice3 == "1":
+        gojo_sparring()
+    elif gojo_choice3 == "2":
+        gojo_learning()
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_training()
+def gojo_rest():
+    print("You decide to rest, but curses never rest and while you were asleep they killed you. GAME OVER!!!")
+    try_again_gojo = input("Do you want to try again? ")
+    if try_again_gojo == "yes":
+        gojo()
+    elif try_again_gojo == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_rest()
+def gojo_sparring():
+    print("You challenge Gojo to a sparring match. Despite your improved skills, Gojo easily defeats you but praises your progress. He offers you the chance to become his apprentice. Do you accept?")
+    gojo_choice4 = input("1. Accept the apprenticeship.\n2. Decline and continue on your own path.\nMake your choice: ")
+    if gojo_choice4 == "1":
+        gojo_apprentice()
+    elif gojo_choice4 == "2":
+        gojo_independent()
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_sparring()
+def gojo_learning():
+    print("You continue learning from Gojo. He teaches you many advanced techniques and secrets of sorcery. You feel confident and ready to face any challenge. YOU WIN!!!")
+    the_end_gojo = input("Do you want to go back to the menu? ")
+    if the_end_gojo == "yes":
+        choose_a_date()
+    elif the_end_gojo == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_learning()
+def gojo_apprentice():
+    print("You accept the apprenticeship. Gojo becomes your mentor, and under his guidance, you become one of the strongest sorcerers in history. YOU WIN!!!")
+    the_end_gojo = input("Do you want to go back to the menu? ")
+    if the_end_gojo == "yes":
+        choose_a_date()
+    elif the_end_gojo == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_apprentice()
+def gojo_independent():
+    print("You decide to continue on your own path. Gojo respects your decision and wishes you luck. You set out on your journey, stronger and more determined. YOU WIN!!!")
+    the_end_gojo = input("Do you want to go back to the menu? ")
+    if the_end_gojo == "yes":
+        choose_a_date()
+    elif the_end_gojo == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_independent()
+def gojo_alone():
+    print("You decide to handle the curses alone. Despite your efforts, you realize you are not strong enough, they overwhelmed you and you DIED. GAME OVER!!!")
+    try_again_gojo = input("Do you want to try again? ")
+    if try_again_gojo == "yes":
+        gojo()
+    elif try_again_gojo == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Sorcerer!\n")
+        gojo_alone()
 def po():
     print('''
                                    ===                                                              
