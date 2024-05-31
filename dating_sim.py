@@ -1374,7 +1374,201 @@ def po():
         %######%%%%%%%%%@@                                                 @@@%@@@@@@@@             
           ''')
     print("Hello I am Po, the Dragon Warrior, do you want to help me in saving China?")
-    
+    po_choice = input("1. Yes, I want to help.\n2. No, I have other things to do.\nMake your choice: ")
+    if po_choice == "1":
+        po_help()
+    elif po_choice == "2":
+        po_no_help()
+    else:
+        print("Invalid input, Warrior!\n")
+        po()
+
+def po_help():
+    print("Po is glad to have your help. Together, you train hard and prepare for the upcoming battle against Tai Lung. Do you focus on learning martial arts or on strategy?")
+    po_choice2 = input("1. Learn martial arts.\n2. Focus on strategy.\nMake your choice: ")
+    if po_choice2 == "1":
+        po_martial_arts()
+    elif po_choice2 == "2":
+        po_strategy()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_help()
+
+def po_martial_arts():
+    print("You train rigorously in martial arts. Your skills improve significantly, and you feel ready for the battle. Do you face Tai Lung directly or support Po from the sidelines?")
+    po_choice3 = input("1. Face Tai Lung directly.\n2. Support Po from the sidelines.\nMake your choice: ")
+    if po_choice3 == "1":
+        po_battle()
+    elif po_choice3 == "2":
+        po_support()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_martial_arts()
+
+def po_strategy():
+    print("You focus on strategy and devise a clever plan to defeat Tai Lung. With your strategy, Po gains the upper hand in the battle. Do you assist Po in executing the plan or stay back and watch the outcome?")
+    po_choice3 = input("1. Assist Po.\n2. Stay back.\nMake your choice: ")
+    if po_choice3 == "1":
+        po_plan()
+    elif po_choice3 == "2":
+        po_watch()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_strategy()
+
+def po_battle():
+    print("You face Tai Lung directly and engage in a fierce battle. Despite your efforts, Tai Lung is too strong, and you get defeated. GAME OVER!!!")
+    try_again_po = input("Do you want to try again? ")
+    if try_again_po == "yes":
+        po()
+    elif try_again_po == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_battle()
+
+def po_support():
+    print("You support Po from the sidelines, providing crucial assistance at key moments. Together, you and Po defeat Tai Lung. But soon, you learn about a new threat: Chen, a powerful warlord. Do you continue your journey to defeat Chen?")
+    po_choice4 = input("1. Yes, let's defeat Chen.\n2. Nah, I'm done.\nMake your choice: ")
+    if po_choice4 == "1":
+        po_chen()
+    elif po_choice4 == "2":
+        po_no_chen()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_support()
+
+def po_plan():
+    print("You assist Po in executing the strategy. Your plan works perfectly, and Tai Lung is defeated without much struggle. However, a new threat arises: Chen, a powerful warlord. Do you join Po in facing this new challenge?")
+    po_choice4 = input("1. Yes, let's defeat Chen.\n2. No, I'm done for now.\nMake your choice: ")
+    if po_choice4 == "1":
+        po_chen()
+    elif po_choice4 == "2":
+        po_no_chen()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_plan()
+
+def po_watch():
+    print("You stay back and watch as Po executes the plan. But Po's IQ is very bad and he didn't fully understand the plan. Po is deafeated and China gets destroyed by Tai Lung.\nGAME OVER!!!")
+    try_again_po = input("Do you want to try again? ")
+    if try_again_po == "yes":
+        po()
+    elif try_again_po == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_watch()
+
+def po_chen():
+    print("You and Po embark on a new journey to defeat Chen. Along the way, you encounter various challenges that test your strength and resolve. Do you continue to train or focus on gathering allies?")
+    po_choice5 = input("1. Continue training.\n2. Focus on gathering allies.\nMake your choice: ")
+    if po_choice5 == "1":
+        po_training()
+    elif po_choice5 == "2":
+        po_allies()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_chen()
+
+def po_training():
+    print("You and Po continue your training, becoming even stronger. As you near Chen's fortress, do you plan a surprise attack or confront him head-on?")
+    po_choice6 = input("1. Plan a surprise attack.\n2. Confront him head-on.\nMake your choice: ")
+    if po_choice6 == "1":
+        po_surprise()
+    elif po_choice6 == "2":
+        po_head_on()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_training()
+
+def po_allies():
+    print("You focus on gathering allies and form a formidable team. With the help of your new allies, you prepare to face Chen. Do you launch a coordinated attack or try to infiltrate his fortress?")
+    po_choice6 = input("1. Launch a coordinated attack.\n2. Infiltrate his fortress.\nMake your choice: ")
+    if po_choice6 == "1":
+        po_coordinated_attack()
+    elif po_choice6 == "2":
+        po_infiltrate()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_allies()
+
+def po_surprise():
+    print("You and Po plan a surprise attack on Chen's fortress. The attack catches Chen off guard, and after a fierce battle, you defeat him. YOU WIN!")
+    the_end_po = input("Do you want to go back to the menu? ")
+    if the_end_po == "yes":
+        choose_a_date()
+    elif the_end_po == "no":
+        print("Bye Bye 🐼👋!!!")
+    else:
+        print("Invalid input, Warrior!\n")
+        po_surprise()
+
+def po_head_on():
+    print("You and Po confront Chen head-on. The battle is tough, but with your combined strength, you manage to defeat him. YOU WIN!!! That's your date.")
+    the_end_po = input("Do you want to go back to the menu? ")
+    if the_end_po == "yes":
+        choose_a_date()
+    elif the_end_po == "no":
+        print("Bye Bye 🐼👋!!!")
+    else:
+        print("Invalid input, Warrior!\n")
+        po_head_on()
+
+def po_coordinated_attack():
+    print("You launch a coordinated attack with your allies. The plan works perfectly, and Chen's forces are overwhelmed. You defeat Chen and save China. YOU WIN!!! That's your date.")
+    the_end_po = input("Do you want to go back to the menu? ")
+    if the_end_po == "yes":
+        choose_a_date()
+    elif the_end_po == "no":
+        print("Bye Bye 🐼👋!!!")
+    else:
+        print("Invalid input, Warrior!\n")
+        po_coordinated_attack()
+
+def po_infiltrate():
+    print("You and your allies infiltrate Chen's fortress. Using stealth and strategy, you reach Chen and defeat him in a surprise attack. YOU WIN!!! That's your date.")
+    the_end_po = input("Do you want to go back to the menu? ")
+    if the_end_po == "yes":
+        choose_a_date()
+    elif the_end_po == "no":
+        print("Bye Bye 🐼👋!!!")
+    else:
+        print("Invalid input, Warrior!\n")
+        po_infiltrate()
+
+def po_no_help():
+    print("You decide not to help Po. Without your assistance, Po loses, Tai Lung wreaks havoc and destroys China. GAME OVER!!!")
+    try_again_po = input("Do you want to try again? ")
+    if try_again_po == "yes":
+        po()
+    elif try_again_po == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_no_help()
+
+def po_no_chen():
+    print("You decide not to help Po against Chen. Without your assistance, Chen defeats Po, conquers China and rules with an iron fist. GAME OVER!!!")
+    try_again_po = input("Do you want to try again? ")
+    if try_again_po == "yes":
+        po()
+    elif try_again_po == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_no_chen()
+
+def po_alone():
+    print("You decide to handle your own tasks. Po respects your decision and wishes you luck. Unfortunately, without your help, Po is deafeated against Tai Lung and China is destroyed. GAME OVER!!!")
+    try_again_po = input("Do you want to try again? ")
+    if try_again_po == "yes":
+        po()
+    elif try_again_po == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Warrior!\n")
+        po_alone()
 def gru():
     print('''
                                                                                                               
