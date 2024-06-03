@@ -1912,7 +1912,117 @@ def senator_armstrong():
                                                                    %@@@@@@@@@@@@@@@@@               
           ''')
     print("I am Senator Armstrong, do you like nano machines son?")
-    
+    armstrong_choice = input("1. Yes, I want to learn about nano machines.\n2. No, I'm not interested.\nMake your choice: ")
+    if armstrong_choice == "1":
+        armstrong_learn()
+    elif armstrong_choice == "2":
+        armstrong_no_learn()
+    else:
+        print("Invalid input, Son!\n")
+        senator_armstrong()
+def armstrong_learn():
+    print("Senator Armstrong is pleased with your interest. He offers you a chance to join his cause and learn about the power of nano machines. Do you accept his offer?")
+    armstrong_choice2 = input("1. Yes, I accept.\n2. No, I refuse.\nMake your choice: ")
+    if armstrong_choice2 == "1":
+        armstrong_accept()
+    elif armstrong_choice2 == "2":
+        armstrong_refuse()
+    else:
+        print("Invalid input, Son!\n")
+        armstrong_learn()
+def armstrong_accept():
+    print("You accept Armstrong's offer. He injects you with nano machines, and you feel a surge of power. With your new abilities, Armstrong assigns you to eliminate all rebels opposing his rule in the U.S. Do you carry out the mission?")
+    armstrong_choice3 = input("1. Yes, I will eliminate the rebels.\n2. No, I can't do this.\nMake your choice: ")
+    if armstrong_choice3 == "1":
+        eliminate_rebels()
+    elif armstrong_choice3 == "2":
+        refuse_mission()
+    else:
+        print("Invalid input, Son!\n")
+        armstrong_accept()
+def eliminate_rebels():
+    print("You use your enhanced abilities to eliminate all rebels opposing Armstrong's rule. The resistance is fierce, but you and Armstrong prevail. America falls under Armstrong's complete control. Now, Armstrong asks you to help him take over the world and spread the nano machines. Do you agree to his plan?")
+    armstrong_choice4 = input("1. Yes, let's take over the world.\n2. No, this is going too far.\nMake your choice: ")
+    if armstrong_choice4 == "1":
+        world_domination()
+    elif armstrong_choice4 == "2":
+        refuse_world_domination()
+    else:
+        print("Invalid input, Son!\n")
+        eliminate_rebels()
+def refuse_mission():
+    print("You refuse to carry out the mission. Armstrong sees you as a traitor and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    try_again_armstrong = input("Do you want to try again? ")
+    if try_again_armstrong.lower() == "yes":
+        senator_armstrong()
+    elif try_again_armstrong.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Son!\n")
+        refuse_mission()
+def refuse_world_domination():
+    print("You refuse to help Armstrong take over the world. Armstrong sees your hesitation as a threat and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    try_again_armstrong = input("Do you want to try again? ")
+    if try_again_armstrong.lower() == "yes":
+        senator_armstrong()
+    elif try_again_armstrong.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Son!\n")
+        refuse_world_domination()
+def armstrong_no_learn():
+    print("You decide not to learn about nano machines. Armstrong sees you as a weakling and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    try_again_armstrong = input("Do you want to try again? ")
+    if try_again_armstrong.lower() == "yes":
+        senator_armstrong()
+    elif try_again_armstrong.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Son!\n")
+        armstrong_no_learn()
+def armstrong_refuse():
+    print("You refuse Armstrong's offer. He sees you as a threat and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    try_again_armstrong = input("Do you want to try again? ")
+    if try_again_armstrong.lower() == "yes":
+        senator_armstrong()
+    elif try_again_armstrong.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Son!\n")
+        armstrong_refuse()
+def world_domination():
+    print("You agree to Armstrong's plan to take over the world. With the power of nano machines, you and Armstrong conquer nation after nation, spreading his rule and the influence of nano machines.")
+    print("Now, Armstrong sends you on a critical mission to destroy Russia, one of the last strongholds resisting his rule. Do you infiltrate their defenses or launch a full-scale attack?")
+    armstrong_choice5 = input("1. Infiltrate their defenses.\n2. Launch a full-scale attack.\nMake your choice: ")
+    if armstrong_choice5 == "1":
+        infiltrate_russia()
+    elif armstrong_choice5 == "2":
+        full_scale_attack()
+    else:
+        print("Invalid input, Son!\n")
+        world_domination()
+def infiltrate_russia():
+    print("You decide to infiltrate Russia's defenses. Using your nano machine abilities, you successfully bypass their security and sabotage their military infrastructure. Russia falls, and Armstrong's rule spreads further.")
+    print("Armstrong now controls the entire world, and you are his right hand. Together, you enforce a new order with the power of nano machines. YOU WIN!!!")
+    the_end_armstrong = input("Do you want to go back to the menu? ")
+    if the_end_armstrong.lower() == "yes":
+        choose_a_date()
+    elif the_end_armstrong.lower() == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input, Son!\n")
+        infiltrate_russia()
+def full_scale_attack():
+    print("You launch a full-scale attack on Russia. The battle is intense and devastating. Despite your abilities, the Russian forces are strong and well-prepared.")
+    print("In the heat of battle, you are overwhelmed and killed. Armstrong's forces retreat, and his plan for world domination is halted. YOU DIE. GAME OVER!!!")
+    try_again_armstrong = input("Do you want to try again? ")
+    if try_again_armstrong.lower() == "yes":
+        senator_armstrong()
+    elif try_again_armstrong.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Son!\n")
+        full_scale_attack()
 def doom_guy():
     print('''
                                                                          =++++                      
