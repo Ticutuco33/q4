@@ -1951,7 +1951,7 @@ def eliminate_rebels():
         print("Invalid input, Son!\n")
         eliminate_rebels()
 def refuse_mission():
-    print("You refuse to carry out the mission. Armstrong sees you as a traitor and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    print("You refuse to carry out the mission. Armstrong sees you as a traitor and decides to eliminate you. YOU DIED. GAME OVER!!!")
     try_again_armstrong = input("Do you want to try again? ")
     if try_again_armstrong.lower() == "yes":
         senator_armstrong()
@@ -1961,7 +1961,7 @@ def refuse_mission():
         print("Invalid input, Son!\n")
         refuse_mission()
 def refuse_world_domination():
-    print("You refuse to help Armstrong take over the world. Armstrong sees your hesitation as a threat and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    print("You refuse to help Armstrong take over the world. Armstrong sees your hesitation as a threat and decides to eliminate you. YOU DIED. GAME OVER!!!")
     try_again_armstrong = input("Do you want to try again? ")
     if try_again_armstrong.lower() == "yes":
         senator_armstrong()
@@ -1971,7 +1971,7 @@ def refuse_world_domination():
         print("Invalid input, Son!\n")
         refuse_world_domination()
 def armstrong_no_learn():
-    print("You decide not to learn about nano machines. Armstrong sees you as a weakling and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    print("You decide not to learn about nano machines. Armstrong sees you as a weakling and decides to eliminate you. YOU DIED. GAME OVER!!!")
     try_again_armstrong = input("Do you want to try again? ")
     if try_again_armstrong.lower() == "yes":
         senator_armstrong()
@@ -1981,7 +1981,7 @@ def armstrong_no_learn():
         print("Invalid input, Son!\n")
         armstrong_no_learn()
 def armstrong_refuse():
-    print("You refuse Armstrong's offer. He sees you as a threat and decides to eliminate you. YOU DIE. GAME OVER!!!")
+    print("You refuse Armstrong's offer. He sees you as a threat and decides to eliminate you. YOU DIED. GAME OVER!!!")
     try_again_armstrong = input("Do you want to try again? ")
     if try_again_armstrong.lower() == "yes":
         senator_armstrong()
@@ -2014,7 +2014,7 @@ def infiltrate_russia():
         infiltrate_russia()
 def full_scale_attack():
     print("You launch a full-scale attack on Russia. The battle is intense and devastating. Despite your abilities, the Russian forces are strong and well-prepared.")
-    print("In the heat of battle, you are overwhelmed and killed. Armstrong's forces retreat, and his plan for world domination is halted. YOU DIE. GAME OVER!!!")
+    print("In the heat of battle, you are overwhelmed and killed. Armstrong's forces retreat, and his plan for world domination is halted. YOU DIED. GAME OVER!!!")
     try_again_armstrong = input("Do you want to try again? ")
     if try_again_armstrong.lower() == "yes":
         senator_armstrong()
