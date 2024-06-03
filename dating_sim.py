@@ -1635,7 +1635,134 @@ def gru():
                     %%%%        ###*                                                                
           ''')
     print("I am Gru, do you want to rob the moon with me?")
-    
+    gru_choice = input("1. Yes, let's rob the moon.\n2. No, I have other plans.\nMake your choice: ")
+    if gru_choice == "1":
+        gru_help()
+    elif gru_choice == "2":
+        gru_no_help()
+    else:
+        print("Invalid input, Minion!\n")
+        gru()
+def gru_help():
+    print("Gru is excited to have your help. Your first mission is to steal the shrink ray from Victor. Do you want to break into Victor's lab or disguise yourselves to infiltrate it?")
+    gru_choice2 = input("1. Break into the lab.\n2. Disguise and infiltrate.\nMake your choice: ")
+    if gru_choice2 == "1":
+        gru_break_in()
+    elif gru_choice2 == "2":
+        gru_disguise()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_help()
+def gru_break_in():
+    print("You decide to break into Victor's lab. The security is tight, and you must avoid detection. Do you disable the security system or sneak past the guards?")
+    gru_choice3 = input("1. Disable the security system.\n2. Sneak past the guards.\nMake your choice: ")
+    if gru_choice3 == "1":
+        gru_disable_security()
+    elif gru_choice3 == "2":
+        gru_sneak_past()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_break_in()
+def gru_disable_security():
+    print("You successfully disable the security system and steal the shrink ray from Victor. Now it's time to fly to the moon. Do you prepare the rocket yourself or ask Dr. Nefario for help?")
+    gru_choice4 = input("1. Prepare the rocket yourself.\n2. Ask Dr. Nefario for help.\nMake your choice: ")
+    if gru_choice4 == "1":
+        gru_prepare_rocket()
+    elif gru_choice4 == "2":
+        gru_ask_nefario()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_disable_security()
+def gru_sneak_past():
+    print("You try to sneak past the guards, but you get caught and they KILL you. GAME OVER!!!")
+    try_again_gru = input("Do you want to try again? ")
+    if try_again_gru == "yes":
+        gru()
+    elif try_again_gru == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_sneak_past()
+def gru_disguise():
+    print("You disguise yourselves and manage to infiltrate Victor's lab. However, you encounter Victor. Do you confront him directly or use a distraction?")
+    gru_choice3 = input("1. Confront him directly.\n2. Use a distraction.\nMake your choice: ")
+    if gru_choice3 == "1":
+        gru_confront_victor()
+    elif gru_choice3 == "2":
+        gru_distraction()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_disguise()
+def gru_confront_victor():
+    print("You confront Victor directly, but he overpowers you and you DIE. GAME OVER!!!")
+    try_again_gru = input("Do you want to try again? ")
+    if try_again_gru == "yes":
+        gru()
+    elif try_again_gru == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_confront_victor()
+def gru_distraction():
+    print("You use a distraction to steal the shrink ray from Victor. Now it's time to fly to the moon. Do you prepare the rocket yourself or ask Dr. Nefario for help?")
+    gru_choice4 = input("1. Prepare the rocket yourself.\n2. Ask Dr. Nefario for help.\nMake your choice: ")
+    if gru_choice4 == "1":
+        gru_prepare_rocket()
+    elif gru_choice4 == "2":
+        gru_ask_nefario()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_distraction()
+def gru_prepare_rocket():
+    print("You decide to prepare the rocket yourself. Unfortunately, you make a critical error, and the rocket explodes during launch, KILLING you. GAME OVER!!!")
+    try_again_gru = input("Do you want to try again? ")
+    if try_again_gru == "yes":
+        gru()
+    elif try_again_gru == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_prepare_rocket()
+def gru_ask_nefario():
+    print("Dr. Nefario helps you prepare the rocket. The rocket is ready, and you launch it towards the moon. Do you land on the moon and shrink it or shrink it from space?")
+    gru_choice5 = input("1. Land on the moon.\n2. Shrink it from space.\nMake your choice: ")
+    if gru_choice5 == "1":
+        gru_land_on_moon()
+    elif gru_choice5 == "2":
+        gru_shrink_from_space()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_ask_nefario()
+def gru_land_on_moon():
+    print("You land on the moon and use the shrink ray to shrink it. You successfully stealing the moon. You and Gru become the number #1 and #2 villians in the whole WORLD. YOU WIN!!! That's your date.")
+    the_end_gru = input("Do you want to go back to the menu? ")
+    if the_end_gru == "yes":
+        choose_a_date()
+    elif the_end_gru == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input, Minion!\n")
+        gru_land_on_moon()
+def gru_shrink_from_space():
+    print("You try to shrink the moon from space, but the shrink ray malfunctions and explodes, you and Gru DIED. GAME OVER!!!")
+    try_again_gru = input("Do you want to try again? ")
+    if try_again_gru == "yes":
+        gru()
+    elif try_again_gru == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_shrink_from_space()
+def gru_no_help():
+    print("You decide not to help Gru. Without your assistance, Gru's plan fails, and he ends up in jail. GAME OVER!!!")
+    try_again_gru = input("Do you want to try again? ")
+    if try_again_gru == "yes":
+        gru()
+    elif try_again_gru == "no":
+        choose_a_date()
+    else:
+        print("Invalid input, Minion!\n")
+        gru_no_help()
 def senator_armstrong():
     print('''
                                       #%%%%%%%@@@@%%                                                
