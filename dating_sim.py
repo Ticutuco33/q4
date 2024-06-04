@@ -2125,5 +2125,142 @@ def doom_guy():
        %########*##**#*#*                                                 %%%#%%#*********#         
           ''')
     print("Kill Demons?")
-    
+    doom_choice = input("1. Yes, let's rip and tear!\n2. No, I can't fight demons.\nMake your choice: ")
+    if doom_choice == "1":
+        doom_fight()
+    elif doom_choice == "2":
+        doom_no_fight()
+    else:
+        print("Invalid input!\n")
+        doom_guy()
+def doom_fight():
+    print("You grab your shotgun and follow Doom Guy into the depths of Hell. Do you attack the first group of demons you see or sneak past them?")
+    doom_choice2 = input("1. Attack the demons.\n2. Sneak past them.\nMake your choice: ")
+    if doom_choice2 == "1":
+        doom_attack()
+    elif doom_choice2 == "2":
+        doom_sneak()
+    else:
+        print("Invalid input!\n")
+        doom_fight()
+def doom_attack():
+    print("You attack the demons head-on. The battle is intense, but you and Doom Guy are victorious. Do you continue deeper into Hell or look for more weapons?")
+    doom_choice3 = input("1. Continue deeper.\n2. Look for more weapons.\nMake your choice: ")
+    if doom_choice3 == "1":
+        doom_deeper()
+    elif doom_choice3 == "2":
+        doom_find_weapons()
+    else:
+        print("Invalid input!\n")
+        doom_attack()
+def doom_sneak():
+    print("You sneak past the demons and find a cache of powerful weapons. Do you take the weapons or leave them?")
+    doom_choice3 = input("1. Take the weapons.\n2. Leave the weapons.\nMake your choice: ")
+    if doom_choice3 == "1":
+        doom_weapons()
+    elif doom_choice3 == "2":
+        doom_no_weapons()
+    else:
+        print("Invalid input!\n")
+        doom_sneak()
+def doom_deeper():
+    print("You venture deeper into Hell. You encounter a demon lord. Do you fight the demon lord or try to find more weapons?")
+    doom_choice4 = input("1. Fight the demon lord.\n2. Find more weapons.\nMake your choice: ")
+    if doom_choice4 == "1":
+        doom_fight_demon_lord()
+    elif doom_choice4 == "2":
+        doom_find_weapons()
+    else:
+        print("Invalid input!\n")
+        doom_deeper()
+def doom_weapons():
+    print("You take the weapons and feel a surge of power. Do you go back to fight the demons or continue deeper into Hell?")
+    doom_choice4 = input("1. Go back and fight.\n2. Continue deeper.\nMake your choice: ")
+    if doom_choice4 == "1":
+        doom_back_to_fight()
+    elif doom_choice4 == "2":
+        doom_deeper()
+    else:
+        print("Invalid input!\n")
+        doom_weapons()
+def doom_no_weapons():
+    print("You leave the weapons and continue sneaking. You reach the end of Hell but realize you can't escape without defeating the demon lord and all demons. Do you go back to fight?")
+    doom_choice4 = input("1. Go back and fight.\n2. Give up.\nMake your choice: ")
+    if doom_choice4 == "1":
+        doom_back_to_fight()
+    elif doom_choice4 == "2":
+        doom_give_up()
+    else:
+        print("Invalid input!\n")
+        doom_no_weapons()
+def doom_back_to_fight():
+    print("You go back to fight the demons with your new weapons. You easily defeat them and continue your mission to save the world from Hell's invasion. Do you continue deeper into Hell or look for the demon lord directly?")
+    doom_choice5 = input("1. Continue deeper.\n2. Find the demon lord directly.\nMake your choice: ")
+    if doom_choice5 == "1":
+        doom_deeper()
+    elif doom_choice5 == "2":
+        doom_find_demon_lord()
+    else:
+        print("Invalid input!\n")
+        doom_back_to_fight()
+def doom_find_demon_lord():
+    print("You find the demon lord directly and fight it with your powerful weapons. After an epic battle, you defeat the demon lord but there are still demons left. Do you continue to kill all demons or give up?")
+    doom_choice6 = input("1. Continue to kill all demons.\n2. Give up.\nMake your choice: ")
+    if doom_choice6 == "1":
+        doom_kill_all_demons()
+    elif doom_choice6 == "2":
+        doom_give_up()
+    else:
+        print("Invalid input!\n")
+        doom_find_demon_lord()
+def doom_fight_demon_lord():
+    print("You fight the demon lord with only your shotgun. The demon lord is too powerful, and without stronger weapons, you are overwhelmed. YOU DIED. GAME OVER!!!")
+    try_again_doom = input("Do you want to try again? ")
+    if try_again_doom.lower() == "yes":
+        doom_guy()
+    elif try_again_doom.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input!\n")
+        doom_fight_demon_lord()
+def doom_kill_all_demons():
+    print("You continue to kill all demons in Hell. With your powerful weapons, you cleanse Hell of all demonic presence and close the portal, saving the world. YOU WIN!!! That's your date.")
+    the_end_doom = input("Do you want to go back to the menu? ")
+    if the_end_doom.lower() == "yes":
+        choose_a_date()
+    elif the_end_doom.lower() == "no":
+        print("Bye Bye 🤫🧏‍!!!")
+    else:
+        print("Invalid input!\n")
+        doom_kill_all_demons()
+def doom_give_up():
+    print("You give up, unable to continue fighting. Doom Guy sees you as a FAILURE. YOU LOSE!!!")
+    try_again_doom = input("Do you want to try again? ")
+    if try_again_doom.lower() == "yes":
+        doom_guy()
+    elif try_again_doom.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input!\n")
+        doom_give_up()
+def doom_no_fight():
+    print("You decide not to fight the demons. Doom Guy sees you as a coward and leaves you behind. YOU LOSE!!!")
+    try_again_doom = input("Do you want to try again? ")
+    if try_again_doom.lower() == "yes":
+        doom_guy()
+    elif try_again_doom.lower() == "no":
+        choose_a_date()
+    else:
+        print("Invalid input!\n")
+        doom_no_fight()
+def doom_find_weapons():
+    print("You find more weapons, including a BFG. Armed with powerful weapons, you are ready to take on the demon lord. Do you continue deeper into Hell or try to find the demon lord directly?")
+    doom_choice6 = input("1. Continue deeper.\n2. Find the demon lord directly.\nMake your choice: ")
+    if doom_choice6 == "1":
+        doom_deeper()
+    elif doom_choice6 == "2":
+        doom_find_demon_lord()
+    else:
+        print("Invalid input!\n")
+        doom_find_weapons()
 choose_a_date()
